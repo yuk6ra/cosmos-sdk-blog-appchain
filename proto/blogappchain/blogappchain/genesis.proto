@@ -1,0 +1,12 @@
+syntax = "proto3";
+package blogappchain.blogappchain;
+
+import "gogoproto/gogo.proto";
+import "blogappchain/blogappchain/params.proto";
+
+option go_package = "blog-appchain/x/blogappchain/types";
+
+// GenesisState defines the blogappchain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

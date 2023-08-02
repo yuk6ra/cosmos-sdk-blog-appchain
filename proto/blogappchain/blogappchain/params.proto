@@ -1,0 +1,12 @@
+syntax = "proto3";
+package blogappchain.blogappchain;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "blog-appchain/x/blogappchain/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
