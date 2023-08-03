@@ -46480,6 +46480,8 @@ definitions:
       id:
         type: string
         format: uint64
+  blogappchain.blogappchain.MsgDeletePostResponse:
+    type: object
   blogappchain.blogappchain.MsgUpdatePostResponse:
     type: object
   blogappchain.blogappchain.Params:
