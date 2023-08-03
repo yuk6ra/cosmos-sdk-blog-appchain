@@ -46480,6 +46480,8 @@ definitions:
       id:
         type: string
         format: uint64
+  blogappchain.blogappchain.MsgUpdatePostResponse:
+    type: object
   blogappchain.blogappchain.Params:
     type: object
     description: Params defines the parameters for the module.
