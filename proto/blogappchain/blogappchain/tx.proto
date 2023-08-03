@@ -1,7 +1,20 @@
 syntax = "proto3";
+
 package blogappchain.blogappchain;
 
 option go_package = "blog-appchain/x/blogappchain/types";
 
 // Msg defines the Msg service.
-service Msg {}
+service Msg {
+  rpc CreatePost (MsgCreatePost) returns (MsgCreatePostResponse);
+}
+message MsgCreatePost {
+  string creator = 1;
+  string title   = 2;
+  string body    = 3;
+}
+
+message MsgCreatePostResponse {
+  uint64 id = 1;
+}
+
